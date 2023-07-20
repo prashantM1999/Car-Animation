@@ -44,18 +44,19 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    left: 444px;
+    left: 50%;
     bottom: 30vh;
+    transform: translateX(-50%);
     animation: shake linear 3s infinite;
 }
 
 
 
 .wheel1 img{
-    width: 77px;
-    position: relative;
-    top: 41px;
-    left: 42px;
+   width: 20%;
+    position: absolute;
+    top: 41%;
+    left: 12%;
     animation: wheelRotation linear .2s infinite;
     
 
@@ -63,10 +64,10 @@ body{
 
 
 .wheel2 img{
-    width: 77px;
-    position: relative;
-    top: -39px;
-    left: 233px;
+      width: 20%;
+    position: absolute;
+    top: 41%;
+    right: 12%;
     animation: wheelRotation linear .2s infinite;
 }
 
@@ -104,6 +105,37 @@ body{
         transform: translateY(-50px);
     }
 }
+
+@media (max-width: 310px) {
+    .car {
+        height: 70px; /* Adjust the car's height for smaller screens */
+        width: 266px; /* Adjust the car's width for smaller screens */
+        bottom: 20vh; /* Adjust the car's position for smaller screens */
+    }
+
+    .wheel2 img{
+        right: 18%;
+    }
+
+    
+
+}
+
+@media (min-width: 1200px) {
+
+    .wheel2 img{
+        right:18%
+    }
+}
+
+@media (min-width: 350px) {
+
+    .wheel2 img{
+        right:18%
+    }
+}
+
+
 
 
 
